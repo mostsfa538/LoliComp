@@ -477,7 +477,6 @@ Token *lexer(FILE *file)
 													   TOKEN_ERROR);
 			}
 
-			// Force increment if no progress was made (prevents infinite loop)
 			if (current_index == prev_index)
 			{
 				fprintf(stderr, "Line %zu: Forcing skip of character '%c'\n",
