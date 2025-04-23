@@ -6,6 +6,8 @@
 #include <ctype.h>
 #include "error.h"
 
+extern size_t line_number;
+
 typedef enum {
     TOKEN_IDENTIFIER,     // Variable name
     TOKEN_INTEGER,        // Unsigned integer
@@ -41,7 +43,6 @@ typedef struct {
     int line;
 } Token;
 
-size_t line_number = 0;
 
 void print_token(Token *token);
 Token *generate_number(char *current, int *current_index);
