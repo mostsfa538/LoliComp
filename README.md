@@ -1,2 +1,2 @@
-# LoliComp
-Create Compiler using C language
+# Scorpion
+A mini procedural language alongside its compiler.
