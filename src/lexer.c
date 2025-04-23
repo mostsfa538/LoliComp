@@ -138,7 +138,7 @@ Token *generate_keyword_or_identifier(char *current, int *current_index)
 	while (keyword_index < 63 && isalpha(current[*current_index]) &&
 		   current[*current_index] != '\0')
 	{
-		keyword[keyword_index++] = current[*current_index++];
+		keyword[keyword_index++] = current[(*current_index)++];
 	}
 	keyword[keyword_index] = '\0';
 

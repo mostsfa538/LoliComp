@@ -7,12 +7,11 @@
 
 int main()
 {
-	FILE *file = fopen("src/test.sc", "r");
-	if (!file)
-	{
-		perror("Error opening file");
-		return 1;
-	}
-	lexer(file);
+    FILE *file = fopen("test.sc", "r");
+    if (!file)
+    {
+        perror("Error opening file");
+        return 1;
+    }
+    lexer(file);
 }
-
